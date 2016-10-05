@@ -1,0 +1,132 @@
+<!DOCTYPE HTML> 
+
+<html>
+<head>
+<title>Lord Dwayne's Tea Shoppe</title>    
+<link rel="stylesheet" href="css/final_project.css">
+<link rel=stylesheet type="text/css" href="https://fonts.googleapis.com/css?family=Meddon">   
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/eggplant/jquery-ui.css">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>    
+
+
+<!-- jQueryUI code - lets the visitor search for a tea against a set list. -->
+<!-- For Assignment 9. -->    
+    
+<script>
+  $(function() {
+    var availableTags = [
+        "Apple Hibiscus Tisane",
+        "Assam",
+        "Ceylon",
+        "Darjeeling",
+        "English Breakfast",
+        "Genmaicha", 
+        "Golden Dragon Oolong",
+        "Irish Breakfast",
+        "Jasmine",
+        "Kukicha",
+        "Matcha",
+        "Nilgiri",
+        "Scottish Breakfast",
+        "Tibeti Brick Tea",
+        "Xin Yang Mao Jian"
+        ];
+    $( "#teatypes" ).autocomplete({
+      source: availableTags
+    });
+  });
+</script>
+    
+
+<!-- jQueryUI code - This is the datepicker -->
+<!-- For Assignment 9. -->    
+        
+    
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+</script>    
+    
+<!-- jQueryUI external plugin code - This is the flexslider with caption -->
+<!-- For Assignment 9. -->    
+    
+<script type="text/javascript">
+    
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+  });
+});   
+    
+
+</script>    
+    
+</head>
+
+<!-- nav bar --> 
+    
+<h1 class="storename"><a href="home.html">Lord Dwayne's Tea Shoppe</a></h1>    
+    
+<ul>
+    <li><a class = "active" href = "home.html" id="nav">Home</a></li>
+    <li><a href = "services.html" id="nav">Services</a></li>
+    <li><a href = "about.html" id="nav">About</a></li>
+    <li><a href = "contact.html" id="nav">Contact</a></li>
+</ul>    
+    
+    
+<body>
+<div id = "mainshoppe">
+<h3>
+    <br>We focus on only the highest quality teas from around the world! </h3>
+    
+    <div class="ui-widget">
+<p>    
+  <label for="teatypes">Do we have your favorites in stock? Check here: </label>
+  <input id="teatypes">
+</p>    
+</div>
+
+<p>Select a date for shipping: <input type="text" id="datepicker"></p>
+    
+    <!-- Put flexslider here! -->
+ 
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/tea1.jpg">
+                <p class="flex-caption">Assam goes well with milk and sugar.</p>
+            </li>
+            <li>
+                <img src="images/tea2.jpg">
+                <p class="flex-caption">A Brisk Irish Breakfast - perfect for a cool Seattle morning.</p>
+            </li>
+            <li>
+                <img src="images/tea3.jpg">
+                <p class="flex-caption">We also sell pots, imported from the UK.</p>
+            </li>
+            <li>
+                <img src="images/tea4.jpg">
+                <p class="flex-caption">Sunflower features our oolong teas every Sat at 1pm, with the gongfu tea ceremony.</p>
+            </li>
+        </ul>
+    </div>
+    
+    <p>Founded in 2011, we are located in the beautiful, palatial Othello neighborhood, in Seattle, WA, right off the Othello Light Rail stop. </p>
+    
+    <p class="sale">Show us your ORCA pass, and receive $1 off a 4oz bag of loose leaf tea!</p>
+</div>    
+    
+<footer>
+<p>Copyright 2016 S.E. Dwayne Linde</p>    
+</footer>
+    
+<script src="js/final_project.js"></script>    
+
+    
+
+</body>    
+</html>
